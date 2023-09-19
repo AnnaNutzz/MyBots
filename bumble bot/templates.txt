@@ -1,0 +1,25 @@
+embed:
+    myEmbed = discord.Embed(title= "  ", description= "   ", color=0xF0AAA6)
+    myEmbed.add_field(name='  ', value="  ", inline= False)
+    myEmbed.add_field(name='   ', value="  ", inline= False)
+    myEmbed.set_footer(text='   ')
+    myEmbed.set_author(name= '   ', icon_url='    ')
+    myEmbed.set_thumbnail(url= client.user.avatar_url)
+    await content.channel.send(embed=myEmbed)
+    return
+
+
+cooldown:
+    @commands.cooldown(rate, per, commands.BucketType.user)
+
+
+avatar thingy:
+    myEmbed.set_footer(icon_url= content.author.avatar_url, text = 'f{content.author} asked for this')
+    myEmbed.set_thumbnail(url= client.user.avatar_url)
+
+
+smol embed for smol things:
+    myEmbed = discord.Embed(title= "  ", color= content.author.color)
+    myEmbed.add_field(name='  ', value="  ", inline= False)
+    await content.channel.send(embed=myEmbed)
+    return
