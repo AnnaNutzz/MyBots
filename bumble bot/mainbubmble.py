@@ -1129,7 +1129,7 @@ async def on_ready():
 
 #token---------------------------------------------------------
 
-client.run("ODU2MDcwMzE2MDAxMzI5MTUz.YM7rnA.-6_vNgZ2owadLbt2ClVAQZSqccw")
+client.run("TOken")
 
 
 #currency symbol : ❖ ◎ 
