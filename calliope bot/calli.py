@@ -215,4 +215,4 @@ async def change_status():
 
 #token==========================================================
 
-client.run("ODgxMTE3MDk2MTIwMDM3NDI2.YSoKPg.LNe-0yUicdEZOXjHNI5CQpgtuJ4")
+client.run("TOken")
