@@ -837,4 +837,4 @@ async def on_ready():
 
 #token========================================================
 
-client.run('ODU4NjY2NTY4MDcwMzMyNDM2.YNhdjw.Vp9RKPKREUjm5eduDec6ZFkxy34')
+client.run('TOken')
