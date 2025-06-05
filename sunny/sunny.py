@@ -14,7 +14,7 @@ client = commands.Bot(command_prefix="?", intents=intents)
 
 # Check if author is bot owner
 def is_it_me(user):
-    return user.id == 747361529896239134
+    return user.id == id9
 
 
 invite_url = "https://discord.com/oauth2/authorize?client_id=1377861594356252782&permissions=962073054272&integration_type=0&scope=bot"
@@ -148,22 +148,22 @@ affirmations = [
 # goofy lines ------------------------------------------------------
 """
 IDs:
-aashirwad = 395923336443723777
-aashwin = 486761188609228811
-aleena = 849305173339799582
-ashwin = 449096139573035009
-christine = 1219277340517990433
-hafsa = 557589868314886144
-karan = 666648289307000832
-sulaimaan = 900249978470019082
-me = 747361529896239134
+aashirwad = id1
+aashwin = id2
+aleena = id3
+ashwin = id4
+christine = id5
+hafsa = id6
+karan = id7
+sulaimaan = id8
+me = id9
 """
 
 # Dictionary mapping user IDs to custom goofy lines
 user_goofy_lines = {
 
     # aashirwad
-    395923336443723777: [
+    id1: [
         " entered like a mysterious NPC with maxed-out stats",
         " has joined, one of the biggest god complexes",
         " the heavenly tech support has arrived 🎧",
@@ -172,21 +172,21 @@ user_goofy_lines = {
     ],
 
     # aashwin
-    486761188609228811: [
+    id2: [
         " the server jester has arrived! :tada:",
         " the rookie with . . . skills, iykyk :smirk:",
         " the man who never pay his bills, the rookie with skills!"
     ],
 
     # aleena
-    849305173339799582: [
+    id3: [
         " has entered the VC, beware of her sneeze",
         " has joined the call - rarer than Ganyu's banner",
         " has joined - hide your feelings, she aint a therapist"
     ],
 
     # ashwin
-    449096139573035009: [
+    id4: [
         ", mister 'i join twice a month'",
         ", the straightest gay male has arrived",
         " the cheating gay has arrived - pick a guy already you can't have all",
@@ -194,14 +194,14 @@ user_goofy_lines = {
     ],
 
     # christine
-    1219277340517990433: [
+    id5: [
         " the grandma with her crochet has arrived",
         " has entered, hide your beers!",
         ", did someone mention 'drama'?? the tea gatherer has come"
     ],
 
     # hafsa
-    557589868314886144: [
+    id6: [
         " has come to grace your taste buds",
         " the sarcastic fairy queen has arrived 🧚🏻‍♀️",
         " - COME INTO THE UNKNOWN! SCATTER! the Sov-en has come",
@@ -209,13 +209,13 @@ user_goofy_lines = {
     ],
 
     # karan
-    666648289307000832: [
+    id7: [
         " entered the VC with Jhol background music",
         " has spawned, be on your best behaviour!", " प्रकट हुऐ हैं"
     ],
 
     # sulaimaan
-    900249978470019082: [
+    id8: [
         ", the half sugar daddy", ", chee syed",
         " has spawned in . . . did someone mention his name?",
         " has come for the roll call! All employees round up!",
@@ -223,7 +223,7 @@ user_goofy_lines = {
     ],
 
     # me
-    747361529896239134: [
+    id9: [
         " the legendary crybaby has entered — kneel, mortals, with tissues please",
         ", the screecher Banshee has arrived! Lower your volumes",
         " the Gryffindor Fat Lady in Portrait has arrived!",
@@ -356,8 +356,8 @@ async def on_message(message):
 @client.event
 async def on_voice_state_update(member, before, after):
     # Check if user joined the specific VC
-    target_vc_id = 1338890681908727839
-    send_channel_id = 937845389271371788
+    target_vc_id = channel_id
+    send_channel_id = channel_id
 
     if (before.channel is None or before.channel.id != target_vc_id) and (
             after.channel and after.channel.id == target_vc_id):
